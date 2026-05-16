@@ -44,7 +44,7 @@ stages:
         inputs:
           command: 'publish'
           projects: '**/PrepApi.csproj'
-          arguments: 'configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) --no-build'
+          arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) --no-build'
           zipAfterPublish: true
           publishWebProjects: false
 
